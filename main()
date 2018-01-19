@@ -1,0 +1,18 @@
+//a pointer variable "points" to a place in the computer's memory where something is stored i.e. variable and functions
+//you would use a pointer variable if is global and going to be changed throughout other functions.
+//or if you are trying to get the contents of a vaariable outside of the function you are using
+//create a pointer variable using a asterik (*)
+
+#include <stdio.h>
+int main(){
+//below is a normal variable with the name of location and a return type of int
+//this is not a pointer
+  int location = 4;
+//next we will create a pointer named new_location holding the address of location in the computer's memory, hence the ampersand
+  int *new_location = &location;
+//new_location is now equal to location
+
+//next we will do what is called dereferencing a pointer. basically like getting the info the pointer is pointing to
+  printf("%d", *new_location);// the %d will print out a number like %i. I dont know the difference but you can look it up
+//we will only use the * for referencing pointers not normal variables. its like saying look at what its pointing at and then read it
+}
